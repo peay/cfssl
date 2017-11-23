@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudflare/cfssl/helpers"
+	"github.com/peay/cfssl/helpers"
 )
 
 // A Bundle contains a certificate and its trust chain. It is intended

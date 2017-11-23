@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/cfssl/config"
-	"github.com/cloudflare/cfssl/csr"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/signer"
-	"github.com/cloudflare/cfssl/signer/local"
+	"github.com/peay/cfssl/config"
+	"github.com/peay/cfssl/csr"
+	"github.com/peay/cfssl/helpers"
+	"github.com/peay/cfssl/signer"
+	"github.com/peay/cfssl/signer/local"
 )
 
 var validKeyParams = []csr.BasicKeyRequest{

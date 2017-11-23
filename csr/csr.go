@@ -16,9 +16,9 @@ import (
 	"net/mail"
 	"strings"
 
-	cferr "github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/log"
+	cferr "github.com/peay/cfssl/errors"
+	"github.com/peay/cfssl/helpers"
+	"github.com/peay/cfssl/log"
 )
 
 const (

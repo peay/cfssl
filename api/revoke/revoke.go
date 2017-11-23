@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/certdb"
-	"github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/ocsp"
+	"github.com/peay/cfssl/api"
+	"github.com/peay/cfssl/certdb"
+	"github.com/peay/cfssl/errors"
+	"github.com/peay/cfssl/helpers"
+	"github.com/peay/cfssl/ocsp"
 
 	stdocsp "golang.org/x/crypto/ocsp"
 )

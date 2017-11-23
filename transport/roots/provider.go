@@ -6,9 +6,9 @@ import (
 	"errors"
 	"io/ioutil"
 
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/transport/core"
-	"github.com/cloudflare/cfssl/transport/roots/system"
+	"github.com/peay/cfssl/helpers"
+	"github.com/peay/cfssl/transport/core"
+	"github.com/peay/cfssl/transport/roots/system"
 )
 
 // Providers is a mapping of supported providers and the functions

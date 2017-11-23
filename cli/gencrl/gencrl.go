@@ -2,8 +2,8 @@
 package gencrl
 
 import (
-	"github.com/cloudflare/cfssl/cli"
-	"github.com/cloudflare/cfssl/crl"
+	"github.com/peay/cfssl/cli"
+	"github.com/peay/cfssl/crl"
 	"strings"
 )
 

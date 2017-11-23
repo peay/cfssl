@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/config"
-	"github.com/cloudflare/cfssl/csr"
-	"github.com/cloudflare/cfssl/signer/local"
+	"github.com/peay/cfssl/api"
+	"github.com/peay/cfssl/config"
+	"github.com/peay/cfssl/csr"
+	"github.com/peay/cfssl/signer/local"
 )
 
 const (

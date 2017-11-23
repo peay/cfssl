@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/revoke"
+	"github.com/peay/cfssl/helpers"
+	"github.com/peay/cfssl/revoke"
 )
 
 // PKI contains scanners for the Public Key Infrastructure.

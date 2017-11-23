@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/auth"
-	"github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/info"
-	"github.com/cloudflare/cfssl/log"
+	"github.com/peay/cfssl/api"
+	"github.com/peay/cfssl/auth"
+	"github.com/peay/cfssl/errors"
+	"github.com/peay/cfssl/info"
+	"github.com/peay/cfssl/log"
 )
 
 // A server points to a single remote CFSSL instance.
@@ -99,11 +99,14 @@ func (srv *server) getURL(endpoint string) string {
 	return fmt.Sprintf("%s/api/v1/cfssl/%s", srv.URL, endpoint)
 }
 
+// Proxy function to use in client
+var ProxyFunction func(*http.Request) (*url.URL, error)
+
 func (srv *server) createTLSTransport() (transport *http.Transport) {
 	// Setup HTTPS client
 	tlsConfig := srv.TLSConfig
 	tlsConfig.BuildNameToCertificate()
-	return &http.Transport{TLSClientConfig: tlsConfig}
+	return &http.Transport{Proxy: ProxyFunction, TLSClientConfig: tlsConfig}
 }
 
 // post connects to the remote server and returns a Response struct

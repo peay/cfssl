@@ -8,13 +8,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/certdb"
-	"github.com/cloudflare/cfssl/certdb/sql"
-	"github.com/cloudflare/cfssl/certdb/testdb"
-	"github.com/cloudflare/cfssl/config"
-	"github.com/cloudflare/cfssl/signer"
-	"github.com/cloudflare/cfssl/signer/local"
+	"github.com/peay/cfssl/api"
+	"github.com/peay/cfssl/certdb"
+	"github.com/peay/cfssl/certdb/sql"
+	"github.com/peay/cfssl/certdb/testdb"
+	"github.com/peay/cfssl/config"
+	"github.com/peay/cfssl/signer"
+	"github.com/peay/cfssl/signer/local"
 )
 
 const (
